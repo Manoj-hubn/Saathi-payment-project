@@ -83,7 +83,7 @@ sequenceDiagram
 
 | Service | Provider | URL |
 |---------|---------|-----|
-| Frontend | Vercel | *(pending Vercel deployment)* |
+| Frontend | Vercel | https://saathi-payment-project-qulg.vercel.app *(Verified Live)* |
 | Backend | Render (Free) | https://saathi-payment-project-2.onrender.com *(Verified Live)* |
 | Database | TiDB Cloud | Cloud-hosted persistent MySQL (AWS Tokyo) |
 

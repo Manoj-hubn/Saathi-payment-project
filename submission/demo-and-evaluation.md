@@ -6,7 +6,7 @@
 
 | Service | URL | Status |
 |---------|-----|--------|
-| Frontend | *(pending Vercel deployment)* | Pending |
+| Frontend | https://saathi-payment-project-qulg.vercel.app | Verified Live |
 | Backend API | https://saathi-payment-project-2.onrender.com | Verified Live |
 | Backend Health | https://saathi-payment-project-2.onrender.com/api/health | Verified Live |
 | API Docs (Swagger) | https://saathi-payment-project-2.onrender.com/docs | Verified Live |
