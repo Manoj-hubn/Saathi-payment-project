@@ -83,9 +83,9 @@ sequenceDiagram
 
 | Service | Provider | URL |
 |---------|---------|-----|
-| Frontend | Vercel | https://saathi-payment-project.vercel.app *(pending verification)* |
-| Backend | Render (Free) | https://saathi-backend.onrender.com *(pending verification)* |
-| Database | Railway MySQL | Cloud-hosted persistent MySQL |
+| Frontend | Vercel | *(pending Vercel deployment)* |
+| Backend | Render (Free) | https://saathi-payment-project-2.onrender.com *(Verified Live)* |
+| Database | TiDB Cloud | Cloud-hosted persistent MySQL (AWS Tokyo) |
 
 > [!NOTE]
 > Render free tier services spin down after inactivity. Expect a ~30s cold start on first request after idle.

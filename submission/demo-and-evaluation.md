@@ -4,12 +4,12 @@
 
 > **Note:** URLs will be confirmed and updated once deployment to Render + Vercel completes.
 
-| Service | URL |
-|---------|-----|
-| Frontend | https://saathi-payment-project.vercel.app *(pending deployment)* |
-| Backend API | https://saathi-backend.onrender.com *(pending deployment)* |
-| Backend Health | https://saathi-backend.onrender.com/api/health |
-| API Docs (Swagger) | https://saathi-backend.onrender.com/docs |
+| Service | URL | Status |
+|---------|-----|--------|
+| Frontend | *(pending Vercel deployment)* | Pending |
+| Backend API | https://saathi-payment-project-2.onrender.com | Verified Live |
+| Backend Health | https://saathi-payment-project-2.onrender.com/api/health | Verified Live |
+| API Docs (Swagger) | https://saathi-payment-project-2.onrender.com/docs | Verified Live |
 
 > [!IMPORTANT]
 > Render free tier has a cold-start delay of ~30 seconds after inactivity. If the first request times out, wait 30 seconds and try again.

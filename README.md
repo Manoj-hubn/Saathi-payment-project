@@ -3,9 +3,9 @@
 A voice-enabled banking demo built with React + FastAPI + MySQL.
 
 > **Live Application**
-> - 🌐 Frontend: *(Vercel URL — update after deployment)*
-> - ⚡ Backend: *(Render URL — update after deployment)*
-> - 📄 API Docs: `<backend-url>/docs`
+> - 🌐 Frontend: *(pending Vercel deployment)*
+> - ⚡ Backend: `https://saathi-payment-project-2.onrender.com`
+> - 📄 API Docs: https://saathi-payment-project-2.onrender.com/docs
 >
 > **Demo Credentials**
 > | Username | PIN | Role |
