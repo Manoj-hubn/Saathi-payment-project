@@ -4,9 +4,9 @@ A voice-enabled banking demo built with React + FastAPI + MySQL.
 
 > **Live Application (Verified & Deployed)**
 > - 🌐 Frontend: https://saathi-payment-project-qulg.vercel.app
-> - ⚡ Backend API: https://saathi-payment-project-2.onrender.com
+> - ⚡ Backend API: https://saathi-payment-project-2.onrender.com/docs
 > - 🩺 Health Check: https://saathi-payment-project-2.onrender.com/api/health
-> - 📄 API Docs (Swagger): https://saathi-payment-project-2.onrender.com/docs
+>
 >
 > **Demo Credentials**
 > | Username | PIN | Role |
