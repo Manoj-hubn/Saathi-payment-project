@@ -61,6 +61,17 @@ def require_agent(user: User = Depends(get_current_user)) -> User:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Agent role authorization required")
     return user
 
+@app.get("/")
+def root():
+    return {
+        "app": settings.app_name,
+        "status": "online",
+        "health": "/api/health",
+        "docs": "/docs",
+        "frontend": "https://saathi-payment-project-qulg.vercel.app",
+        "message": "Saathi Voice Banking Backend API is running."
+    }
+
 @app.get("/api/health")
 def health():
     return {"status": "ok", "mode": "synthetic-demo"}
