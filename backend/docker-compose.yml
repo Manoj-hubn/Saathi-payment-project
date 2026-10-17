@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: saathi-db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: tiger
+      MYSQL_DATABASE: Manu_project
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-ptiger"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: saathi-backend
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      APP_NAME: "Saathi Voice Banking"
+      ENVIRONMENT: "production"
+      DATABASE_URL: "mysql+pymysql://root:tiger@db:3306/Manu_project"
+      CORS_ORIGINS: "http://localhost:5173,http://localhost:3000,http://localhost"
+      PAYMENT_THRESHOLD: "5000"
+      PER_PAYMENT_LIMIT: "10000"
+      DAILY_LIMIT: "20000"
+      CONFIDENCE_THRESHOLD: "0.78"
+      SECRET_KEY: "saathi-secure-prod-key-voice-banking"
+      SPOOF_PROVIDER: "disabled"
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: saathi-frontend
+    restart: unless-stopped
+    depends_on:
+      - backend
+    ports:
+      - "5173:80"
+
+volumes:
+  db_data:
